@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+/*Header*/
+
+.cabecera{
+    background-color: rgb(192, 192, 192);
+    width: auto;
+    height: 100px;
+    padding: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cabecera .logo{
+    width: 10%;
+    padding-left: 20px;
+}
+
+.menu ul{
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.menu li{
+    padding: 20px 60px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.menu li a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/*Main*/
+
+.carrousel{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+.itemimage{
+    width: 100%;
+    height: 120%;
+}
+
+/*Descripción de Servicios*/
+
+.bienvenida .h1{
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.servicios{
+    width: auto;
+    margin: auto;
+    padding: 20px 0 50px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.multimediasection{
+    width: auto;
+    margin: 20px;
+    padding: 20px 0 50px;
+    display: inline-block;
+    background-color: rgb(231, 231, 231);
+}
+
+/*Footer*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: white;
+}
+
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*Quienes Somos*/
+
+.quienes-somos{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 50px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Equipo*/
+
+.staff{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 50px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Preguntas Frecuentes*/
+
+.pf{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 50px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Consultanos*/
+
+.consultanos{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 50px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+/*GRID*/
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid black;
+    gap: 10px;
+}
+
+.grid-item {
+    border: 2px solid black;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Aside*/
+
+.staffaside{
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Media queries mobile*/
+
+
+@media only screen and (max-width: 480px) {
+    .staffaside {
+        background-color: blue;
+    }
+}
+
+/*Mobie query desktop*/
+
+@media only screen and (max-width: 961px) {
+    .staffaside {
+        background-color: grey;
+    }
+}
+
+
+/*Aplicando trasnformaciones, transiciones y animaciones*/
+/*En html equipo*/
+
+.boxteam {
+    background-color: rgb(216, 216, 216);
+    transition: all 5s;
+}
+
+.boxteam:hover {
+    transform: scale(2);
+}
+
+.staff2 {
+    text-align: start;
+}
+.staff2:hover {
+    transform: translatex(50px);
+    color: blue;
+}
